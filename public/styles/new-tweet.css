@@ -24,8 +24,9 @@
   margin-top: 1em;
   background: transparent;
   resize: none;
+  overflow: none;
 }
 
-make border beneeath text area
-stretched and centered
-move beneath prompt
+.negative {
+  color:red;
+}

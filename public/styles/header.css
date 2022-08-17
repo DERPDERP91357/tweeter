@@ -8,3 +8,7 @@ header {
   align-items: center;
   height: 620px;
 }
+
+#user-full-name{
+  color:white;
+}
