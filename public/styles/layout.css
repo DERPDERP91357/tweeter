@@ -27,10 +27,12 @@ body {
  */
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
 }
+
+/* tweet history container  */
 main {
   width: 90%;
   align-self: center;

@@ -1,22 +1,29 @@
+/* navigation bar; fixed position and serves as flex container */
 nav {
   display: flex;
-  height: 120px;
-  background-color: #4056a1;
-  color: #ffffff;
-  width: 100vw;
   justify-content: space-between;
   align-items: center;
+  height: 120px;
+  width: 100vw;
+  color: #ffffff;
+  background-color: #4056a1;
   position: fixed;
 }
-i {
-  color: red;
+
+/* targets icon from fontawesome site */
+i.fa-solid.fa-angles-down {
   align-self: center;
   margin-top: -1em;
+  color: red;
 }
+
+/* Logo text */
 nav > span {
-  font-family: "Bungee", sans-serif;
   margin: 0 1.5em;
+  font-family: "Bungee", sans-serif;
 }
+
+/* text display in upper right corner of page */
 #header-right {
   display: flex;
   flex-direction: column;

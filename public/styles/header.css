@@ -1,18 +1,22 @@
+/* targets header and influences inner elements */
 .profile {
-  background-color: #e87ee8;
-  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
-  background-size: auto;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   height: 23em;
+  width: 100vw;
+  background-color: #e87ee8;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  background-size: auto;
 }
 
+/* targets user name text */
 #user-full-name {
   color: white;
 }
+
+/* targets user profile picture */
 div > img {
   align-self: end;
 }

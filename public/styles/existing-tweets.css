@@ -1,52 +1,59 @@
 .tweet {
-  background-color: #ec71b981;
-  border: thick solid black;
-  border-radius: 2em;
-  height: 10em;
   display: flex;
+  background-color: #ec71b981;
   flex-direction: column;
   justify-content: center;
+  height: 10em;
+  border: thick solid black;
+  border-radius: 2em;
   margin-bottom: 1em;
 }
-.tweet:hover {
+
+/* creates box shadow on hover */
+.tweet:hover { 
   box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(243, 210, 104, 0.24);
 }
 
 .tweet-header {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
 
 .tweet-footer {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
 
+/* left and right items refer to content in the four corners of the tweet history containers */
 .right-items {
   margin-right: 1.5em;
 }
 .left-items {
   margin-left: 1.5em;
 }
+
+/* targets img in tweet header */
 .tweet-header img {
   margin-bottom: 1em;
 }
 
 .tweet-body {
-  width: 95%;
-  margin-bottom: 0.5em;
-  align-self: center;
-  border-bottom: 0.25em solid black;
   display: flex;
   justify-content: start;
+  align-self: center;
+  width: 95%;
+  margin-bottom: 0.5em;
+  border-bottom: 0.25em solid black;
 }
 
+/* targets tweet text in tweet history containers */
 .tweet-body p {
   margin-left: 2em;
 }
 
+/* icons change color on hover (ie like and retweet)*/
 .icons i:hover {
   color: yellow;
 }
