@@ -1,0 +1,31 @@
+#buttonCounter {
+  display: flex;
+  justify-content: space-between; 
+  font-family: "Bungee", sans-serif;
+  color: #FFFFFF;
+}
+#chirper {
+  background-color: #4056A1;
+  border-radius: 10%;
+  color: #FFFFFF;
+}
+#tweet-form{
+  display: flex;
+  flex-direction: column;
+}
+
+#tweet-text{
+  height: 1.5em;
+  width: 100%;
+  align-self: center;
+  border-color:transparent;
+  border-bottom: solid #000000;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  background: transparent;
+  resize: none;
+}
+
+make border beneeath text area
+stretched and centered
+move beneath prompt

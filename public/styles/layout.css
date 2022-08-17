@@ -16,7 +16,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #ec71b9;
+  background-color: #ec71b981;
   font-size: 24px;
 }
 
@@ -26,4 +26,10 @@ body {
 
  body {
   font-family: "Source Sans Pro", sans-serif;
+  display:flex;
+  flex-direction: column;
+ }
+ main {
+  width: 90%;
+  align-self: center;
  }
