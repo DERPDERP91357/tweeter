@@ -1,14 +1,18 @@
-header {
+.profile {
   background-color: #e87ee8;
   background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  background-size: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  height: 620px;
+  height: 23em;
 }
 
 #user-full-name{
   color:white;
+}
+div > img {
+  align-self: end;
 }

@@ -26,6 +26,9 @@
   resize: none;
   overflow: none;
 }
+.new-tweet{
+  margin-bottom: 2em;
+}
 
 .negative {
   color:red;

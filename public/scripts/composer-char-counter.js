@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#tweet-text").on("input", function () {
-    let inputLength = this.value.length;
+    let inputLength = $(this).val().length;
     const letterCounter = $("#tweet-text").siblings("div").children(".counter")
     letterCounter.val((i, val) => {
       let maximumCount = 140;
@@ -9,6 +9,5 @@ $(document).ready(function() {
     if (letterCounter.val() <= 0) {
       letterCounter.addClass("negative");
     }
-    
   })
 });
