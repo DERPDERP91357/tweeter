@@ -34,7 +34,7 @@ $(document).ready(function () {
   };
   const loadtweets = function() {
    $.get("/tweets").then((data) => {
-    $('#past-tweets').empty();
+    $("#past-tweets").empty();
     renderTweets(data);
    })
   };
