@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const data = [];
 
 $(document).ready(function () {
   const createTweetElement = function (data) {
@@ -34,6 +33,21 @@ $(document).ready(function () {
     }
   };
 
-  renderTweets(data);
+
+  $("#tweet-form").on("submit", function (event) {
+    event.preventDefault();
+    const data = $(this).serialize();
+    $.post("/tweets", data).then(() => {
+      console.log("data sent successfully!");
+    })
+  })
+
+  const loadtweets = function() {
+   $.get("/tweets").then((data) => {
+    renderTweets(data);
+   })
+  };
+
+  loadtweets();
 });
 
