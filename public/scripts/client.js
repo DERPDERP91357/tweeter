@@ -14,7 +14,7 @@ $(document).ready(function () {
     const $p = $("<p>").text(data.content.text);
     const $section = $("<section>").addClass("tweet-body").append($p);
 
-    const $span2 = $("<span>").addClass("left-items").text(data.created_at);
+    const $span2 = $("<span>").addClass("left-items").text(timeago.format(data.created_at));
     const $i1 = $("<i>").addClass(["fa-solid", "fa-heart"]);
     const $i2 = $("<i>").addClass(["fa-solid", "fa-retweet"]);
     const $i3 = $("<i>").addClass(["fa-solid", "fa-flag"]);
