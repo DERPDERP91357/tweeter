@@ -29,9 +29,17 @@ $(document).ready(function () {
 
   const renderTweets = function(tweets) {
     for (let each of tweets) {
-      $('#tweets-container').append(createTweetElement(each));
+      $('#past-tweets').append(createTweetElement(each));
     }
   };
+  const loadtweets = function() {
+   $.get("/tweets").then((data) => {
+    $('#past-tweets').empty();
+    renderTweets(data);
+   })
+  };
+
+  loadtweets();
 
 
   $("#tweet-form").on("submit", function (event) {
@@ -43,15 +51,9 @@ $(document).ready(function () {
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {
       console.log("data sent successfully!");
+      loadtweets();
     })
   })
 
-  const loadtweets = function() {
-   $.get("/tweets").then((data) => {
-    renderTweets(data);
-   })
-  };
-
-  loadtweets();
 });
 
