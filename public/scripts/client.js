@@ -12,9 +12,9 @@ $(document).ready(function () {
     const $header = $("<header>").addClass("tweet-header").append($img, $span);
 
     const $p = $("<p>").text(data.content.text);
-    // if (data.content.text.length > 50) {
-    //   $p.addClass("smaller-font");
-    // }
+    if (data.content.text.length > 50) {
+      $p.addClass("smaller-font");
+    }
     const $section = $("<section>").addClass("tweet-body").append($p);
 
     const $span2 = $("<span>").addClass("left-items").text(timeago.format(data.created_at));
@@ -44,23 +44,22 @@ $(document).ready(function () {
 
   loadtweets();
 
-
+  $("error").css("display", "none");
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
     let tweetLength = $("#tweet-text").val();
-    // $(".error").css({"visibility": "hidden"});
+    $(".error").slideUp();
     if (!tweetLength) {
-      $("#error-text").text("Input must have a valid length!!")
-      return $(".error").slideDown();
-      // .css({"visibility": "visible"})
+      $(".error").css({"background-color" : "red"}).text("Input must have a valid length!!").prepend('<i class="fa-solid fa-triangle-exclamation"></i>')
+      return $(".error").slideDown("slow");
     }
     if (tweetLength.length > 140) {
-      $("#error-text").text("Input must be 140 characters or less!!")
-      return $(".error").css({"visibility": "visible"});
+      $(".error").css({"background-color" : "red"}).text("Input must be 140 characters or less!!").prepend('<i class="fa-solid fa-triangle-exclamation"></i>');
+      return $(".error").slideDown("slow");
     }
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {
-      console.log("data sent successfully!");
+      $(".error").css({"background-color" : "rgba(162, 0, 255, 0.322)"}).text("Alright!! The world is now one Chirp louder!!").prepend('<i class="fa-solid fa-circle-check"></i>').slideDown("slow");
       loadtweets();
     })
   })

@@ -68,6 +68,8 @@ span.right-items {
 }
 
 /* to scale down long tweets */
-/* .smaller-font {
+.smaller-font {
   font-size: 0.8em;
-} */
+  overflow-wrap: anywhere;
+  margin-top:0px;
+}
