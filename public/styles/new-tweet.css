@@ -32,6 +32,7 @@
   background: transparent;
   resize: none;
   overflow: none;
+  font-family: "Bungee", sans-serif;
 }
 
 #tweet-text:focus {
@@ -52,6 +53,7 @@
 .input-upper {
   display: flex;
   justify-content: space-between;
+  font-family: "Bungee", sans-serif;
 }
 
 /* for error msg container */

@@ -25,6 +25,8 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  color:aliceblue;
+  font-family: "Bungee", sans-serif;
 }
 
 /* left and right items refer to content in the four corners of the tweet history containers */
@@ -55,6 +57,8 @@ span.right-items {
   width: 95%;
   margin-bottom: 0.5em;
   border-bottom: 0.25em solid black;
+  color:aliceblue;
+  font-family: "Bungee", sans-serif;
 }
 
 /* targets tweet text in tweet history containers */
