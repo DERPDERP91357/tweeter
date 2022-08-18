@@ -64,7 +64,7 @@
   align-self: center;
   align-items: center;
   justify-content: space-between;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .fa-solid.fa-triangle-exclamation {

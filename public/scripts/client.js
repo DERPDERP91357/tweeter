@@ -12,6 +12,9 @@ $(document).ready(function () {
     const $header = $("<header>").addClass("tweet-header").append($img, $span);
 
     const $p = $("<p>").text(data.content.text);
+    // if (data.content.text.length > 50) {
+    //   $p.addClass("smaller-font");
+    // }
     const $section = $("<section>").addClass("tweet-body").append($p);
 
     const $span2 = $("<span>").addClass("left-items").text(timeago.format(data.created_at));
@@ -45,10 +48,11 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
     let tweetLength = $("#tweet-text").val();
-    $(".error").css({"visibility": "hidden"});
+    // $(".error").css({"visibility": "hidden"});
     if (!tweetLength) {
       $("#error-text").text("Input must have a valid length!!")
-      return $(".error").css({"visibility": "visible"});
+      return $(".error").slideDown();
+      // .css({"visibility": "visible"})
     }
     if (tweetLength.length > 140) {
       $("#error-text").text("Input must be 140 characters or less!!")
