@@ -36,6 +36,10 @@ $(document).ready(function () {
 
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
+    let tweetLength = $("#tweet-text").val();
+    if (!tweetLength || tweetLength.length > 140) {
+      return alert("invalid message!");
+    }
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {
       console.log("data sent successfully!");
