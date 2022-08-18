@@ -71,10 +71,15 @@
 
       <!-- new tweet interface -->
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form id="tweet-form">
-          <label for="tweet-text">Share <strong>YOUR</strong> chirp!</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <div class = "input-upper">
+            <div>
+              <h2>Compose Tweet</h2>
+              <label for="tweet-text">Share <strong>YOUR</strong> chirp!</label>
+            </div>  
+            <div class="error">Error message</div>
+          </div>
+          <textarea name="text" id="tweet-text" required></textarea>
           <div id="buttonCounter">
             <button id="chirper" type="submit">Chirp</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

@@ -20,10 +20,10 @@
   flex-direction: column;
 }
 
-/* prompt text placement */
+/* textare placement */
 #tweet-text {
   align-self: center;
-  height: 1.5em;
+  height: 2em;
   width: 100%;
   border-color: transparent;
   border-bottom: solid #000000;
@@ -42,4 +42,22 @@
 /* for character counter */
 .negative {
   color: red;
+}
+
+/* div content above textarea */
+.input-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* for error msg  */
+.error {
+  height: 3em;
+  width: 10em;
+  background-color: red;
+  border-radius: 1em;
+  display:flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
