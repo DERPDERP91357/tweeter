@@ -66,6 +66,8 @@
   align-self: center;
   align-items: center;
   justify-content: space-between;
+  color:aliceblue;
+  max-width: 20em;
 }
 
 

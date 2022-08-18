@@ -19,6 +19,8 @@
   width: 100%;
   justify-content: space-between;
   align-content: start;
+  color:aliceblue;
+  font-family: "Bungee", sans-serif;
 }
 
 .tweet-footer {
@@ -76,4 +78,10 @@ span.right-items {
   font-size: 0.8em;
   overflow-wrap: anywhere;
   margin-top:0px;
+}
+
+/* make profile image an icon */
+img.left-items {
+  border-radius: 50%;
+  background-color: aliceblue;
 }
