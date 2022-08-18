@@ -9,5 +9,8 @@ $(document).ready(function () {
     if (letterCounter.val() <= 0) {
       letterCounter.addClass("negative");//changes color of counter when value is negative
     }
+    if (letterCounter.val() > 0) {
+      letterCounter.removeClass("negative");//changes color of counter when value is positive again
+    }
   });
 });

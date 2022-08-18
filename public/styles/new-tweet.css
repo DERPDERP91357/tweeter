@@ -20,7 +20,7 @@
   flex-direction: column;
 }
 
-/* textare placement */
+/* textarea placement */
 #tweet-text {
   align-self: center;
   height: 2em;
@@ -32,6 +32,10 @@
   background: transparent;
   resize: none;
   overflow: none;
+}
+
+#tweet-text:focus {
+  background-color: coral;
 }
 
 /* moves entire tweet container */
@@ -50,14 +54,19 @@
   justify-content: space-between;
 }
 
-/* for error msg  */
+/* for error msg container */
 .error {
-  height: 3em;
-  width: 10em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   background-color: red;
   border-radius: 1em;
   display:flex;
   align-self: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.fa-solid.fa-triangle-exclamation {
+  color: yellow;
 }

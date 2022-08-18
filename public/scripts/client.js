@@ -45,8 +45,14 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
     let tweetLength = $("#tweet-text").val();
-    if (!tweetLength || tweetLength.length > 140) {
-      return alert("invalid message!");
+    $(".error").css({"visibility": "hidden"});
+    if (!tweetLength) {
+      $("#error-text").text("Input must have a valid length!!")
+      return $(".error").css({"visibility": "visible"});
+    }
+    if (tweetLength.length > 140) {
+      $("#error-text").text("Input must be 140 characters or less!!")
+      return $(".error").css({"visibility": "visible"});
     }
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {

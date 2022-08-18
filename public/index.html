@@ -77,9 +77,12 @@
               <h2>Compose Tweet</h2>
               <label for="tweet-text">Share <strong>YOUR</strong> chirp!</label>
             </div>  
-            <div class="error">Error message</div>
+            <div class="error">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <p id="error-text"></p>
+            </div>
           </div>
-          <textarea name="text" id="tweet-text" required></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
           <div id="buttonCounter">
             <button id="chirper" type="submit">Chirp</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
