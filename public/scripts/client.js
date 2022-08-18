@@ -29,7 +29,7 @@ $(document).ready(function () {
 
   const renderTweets = function(tweets) {
     for (let each of tweets) {
-      $('#past-tweets').append(createTweetElement(each));
+      $('#past-tweets').prepend(createTweetElement(each));
     }
   };
   const loadtweets = function() {
