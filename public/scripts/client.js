@@ -12,7 +12,7 @@ $(document).ready(function () {
     const $header = $("<header>").addClass("tweet-header").append($img, $span);
 
     const $p = $("<p>").text(data.content.text);
-    if (data.content.text.length > 50) {
+    if (data.content.text.length > 30) {
       $p.addClass("smaller-font");
     }
     const $section = $("<section>").addClass("tweet-body").append($p);

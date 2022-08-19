@@ -1,4 +1,5 @@
-@media only screen and (min-width : 300px) and (max-width : 767px){
+/* breakpoint beyond max width causes overflow to tweet body */
+@media only screen and (min-width : 320px) and (max-width : 629px){
   /* font size adjusted to fit */
   html {
     font-size: 8px;
@@ -6,6 +7,10 @@
   /* nav bar */
   nav {
     max-height: 2em;
+    background-color: #4056a1;
+  }
+  #header-right, nav > span {
+    background: transparent;
   }
   /* arrow icon removed from nav section */
   i.fa-solid.fa-angles-down {
@@ -32,19 +37,49 @@
     height:auto;
     margin-bottom: 0.3em;
   }
-  /* tweet-history section (resizes icon) */
-  .tweet-header img {
-    max-width:10%;
-    height:auto;
-    margin-top: 0.5em;
+
+
+  /* reconfigures layout of tweet container */
+  .tweet{
+    flex-direction: row;
   }
+  .tweet-header, .tweet-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .right-items {
+    margin-right: 0em;
+  }
+  .tweet-body {
+    border-color: transparent;
+  }
+  /* resizes icon proportionally */
+  img.left-items {
+    max-width:40px;
+    min-width: 40px;
+    height:auto;
+  }
+
+  span.right-items {
+    padding-bottom: auto;
+    margin-left: 1em;
+  }
+  span.left-items {
+    font-size: 0.8em;
+    margin-right: 1em;
+  }
+
+  .smaller-font{
+    font-size: 0.8em;
 }
 
 /* hypothetical declaration as page was initially developed for desktop hence this is the base case for most css */
-/* @media only screen and (min-width : 768px) and (max-width: 1024px){} */
+/* @media only screen and (min-width : 629px) and (max-width: 1442px){} */
 
-/* only tested up to 4k px width */
-@media only screen and (min-width : 1200px){
+/* only tested up to 4k px width; breakpoint causes overflow to tweet body*/
+@media only screen and (min-width : 1442px){
   
   /* change nav on resize */
   nav{
@@ -75,5 +110,3 @@
     font-size: 1em;
   }
 }
-
-max width heigh 

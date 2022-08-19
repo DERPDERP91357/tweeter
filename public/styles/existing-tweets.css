@@ -11,7 +11,7 @@
 
 /* creates box shadow on hover */
 .tweet:hover { 
-  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(243, 210, 104, 0.24);
+  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(129, 5, 88, 0.705);
 }
 
 .tweet-header {
@@ -46,6 +46,9 @@ span.right-items {
 /* targets img in tweet header */
 .tweet-header img {
   margin-bottom: 1em;
+  /* make profile image an icon */
+  border-radius: 50%;
+  background-color: aliceblue;
 }
 
 .tweet-body {
@@ -76,8 +79,3 @@ span.right-items {
   margin-top: 0em;
 }
 
-/* make profile image an icon */
-img.left-items {
-  border-radius: 50%;
-  background-color: aliceblue;
-}
