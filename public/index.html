@@ -59,40 +59,42 @@
       </div>
     </nav>
 
-    <header class="profile">
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <div>
-        <h2 id="user-full-name">Bobbetta Jones</h2>
-      </div>
-    </header>
+    <div class = "main-page-body">
+      <header class="profile">
+        <div>
+          <img src="/images/profile-hex.png" />
+        </div>
+        <div>
+          <h2 id="user-full-name">Bobbetta Jones</h2>
+        </div>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+      <!-- Page-specific (main) content here -->
+      <main class="container">
 
-      <!-- new tweet interface -->
-      <section class="new-tweet">
-        <form id="tweet-form">
-          <div class = "input-upper">
-            <div>
-              <h2>Compose Tweet</h2>
-              <label for="tweet-text">Share <strong>YOUR</strong> chirp!</label>
-            </div>  
-            <p class="error"></p>
-          </div>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div id="buttonCounter">
-            <button id="chirper" type="submit">Chirp</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+        <!-- new tweet interface -->
+        <section class="new-tweet">
+          <form id="tweet-form">
+            <div class = "input-upper">
+              <div>
+                <h2>Compose Tweet</h2>
+                <label for="tweet-text">Share <strong>YOUR</strong> chirp!</label>
+              </div>  
+              <p class="error"></p>
+            </div>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div id="buttonCounter">
+              <button id="chirper" type="submit">Chirp</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
 
 
-      <!-- individual tweets container -->
-      <section id="past-tweets"></section>
-      
-    </main>
+        <!-- individual tweets container -->
+        <section id="past-tweets"></section>
+        
+      </main>
+    </div>
   </body>
 </html>

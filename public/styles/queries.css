@@ -3,7 +3,6 @@
   html {
     font-size: 8px;
   }
-
   /* nav bar */
   nav {
     max-height: 2em;
@@ -12,8 +11,6 @@
   i.fa-solid.fa-angles-down {
     display : none;
   }
-
-
   /* header/profile section */
   /* resize fixed img size icon  and move contents to right side*/
   .profile {
@@ -35,32 +32,48 @@
     height:auto;
     margin-bottom: 0.3em;
   }
-  
   /* tweet-history section (resizes icon) */
   .tweet-header img {
     max-width:10%;
     height:auto;
     margin-top: 0.5em;
   }
-  .smaller-font{
-    margin-top: 0em;
-  }
 }
 
-@media only screen and (min-width : 768px) and (max-width: 1024px){
-  html {
-    font-size: 16px;
+/* hypothetical declaration as page was initially developed for desktop hence this is the base case for most css */
+/* @media only screen and (min-width : 768px) and (max-width: 1024px){} */
+
+/* only tested up to 4k px width */
+@media only screen and (min-width : 1200px){
+  
+  /* change nav on resize */
+  nav{
+    background-color: #4056a1;
   }
-  /* declared again as page was initially developed for desktop hence this is the base case for most css */
-  .smaller-font{
-    margin-top: 0em;
+  #header-right, nav > span {
+    background: transparent;
   }
-}
+
+  /* this is contaniner of profile pic and tweets container */
+  .main-page-body{
+    flex-direction: row;
+  }
+
+  /* profile pic size adjustment */
+  .profile{
+    max-width: 20vw;
+  }
+
+  /* new tweet input section adjustment since nav bar is on top in new display*/
+  .new-tweet{
+    margin-top: 5.5em;
+  }
 
 
-
-@media only screen and (min-width : 2000px){
+  /* full 140 character tweets can display at full size at this point */
   .smaller-font{
     font-size: 1em;
   }
 }
+
+max width heigh 

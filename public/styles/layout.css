@@ -32,6 +32,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* combines profile pic and tweet container one item for dispay purposes */
+.main-page-body{
+  display:flex;
+  flex-direction: column;
+}
+
 /* tweet history container  */
 main {
   width: 90%;

@@ -34,13 +34,9 @@
 /* left and right items refer to content in the four corners of the tweet history containers */
 .right-items {
   margin-right: 1.5em;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 .left-items {
   margin-left: 1.5em;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 /* shift just the usertag up */
@@ -77,6 +73,7 @@ span.right-items {
 .smaller-font {
   font-size: 0.7em;
   overflow-wrap: anywhere;
+  margin-top: 0em;
 }
 
 /* make profile image an icon */
