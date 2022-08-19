@@ -1,0 +1,66 @@
+@media only screen and (min-width : 300px) and (max-width : 767px){
+  /* font size adjusted to fit */
+  html {
+    font-size: 8px;
+  }
+
+  /* nav bar */
+  nav {
+    max-height: 2em;
+  }
+  /* arrow icon removed from nav section */
+  i.fa-solid.fa-angles-down {
+    display : none;
+  }
+
+
+  /* header/profile section */
+  /* resize fixed img size icon  and move contents to right side*/
+  .profile {
+    max-height: 9em;
+    flex-direction: row;
+  }
+  .profile > div {
+    display: flex;
+    align-self: end;
+    justify-content: end;
+  }
+  div > h2 {
+    max-width: 5em;
+    overflow-wrap: normal;
+    margin-right: 1em;
+  }
+  div > img {
+    max-width:30%;
+    height:auto;
+    margin-bottom: 0.3em;
+  }
+  
+  /* tweet-history section (resizes icon) */
+  .tweet-header img {
+    max-width:10%;
+    height:auto;
+    margin-top: 0.5em;
+  }
+  .smaller-font{
+    margin-top: 0em;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1024px){
+  html {
+    font-size: 16px;
+  }
+  /* declared again as page was initially developed for desktop hence this is the base case for most css */
+  .smaller-font{
+    margin-top: 0em;
+  }
+}
+
+
+
+@media only screen and (min-width : 2000px){
+  .smaller-font{
+    font-size: 1em;
+  }
+}

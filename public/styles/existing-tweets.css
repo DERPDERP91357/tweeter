@@ -18,7 +18,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-content: start;
+  align-content: center;
   color:aliceblue;
   font-family: "Bungee", sans-serif;
 }
@@ -75,9 +75,8 @@ span.right-items {
 
 /* to scale down long tweets */
 .smaller-font {
-  font-size: 0.8em;
+  font-size: 0.7em;
   overflow-wrap: anywhere;
-  margin-top:0px;
 }
 
 /* make profile image an icon */
