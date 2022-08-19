@@ -19,5 +19,9 @@
   "devDependencies": {
     "nodemon": "^1.19.4",
     "prettier": "2.7.1"
+  },
+  "prettier": {
+    "bracketSameLine": true,
+    "printWidth": 160
   }
 }

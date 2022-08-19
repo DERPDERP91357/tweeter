@@ -1,5 +1,5 @@
 /* breakpoint beyond max width causes overflow to tweet body */
-@media only screen and (min-width : 320px) and (max-width : 629px){
+@media only screen and (min-width: 320px) and (max-width: 629px) {
   /* font size adjusted to fit */
   html {
     font-size: 8px;
@@ -9,12 +9,13 @@
     max-height: 2em;
     background-color: #4056a1;
   }
-  #header-right, nav > span {
+  #header-right,
+  nav > span {
     background: transparent;
   }
   /* arrow icon removed from nav section */
   i.fa-solid.fa-angles-down {
-    display : none;
+    display: none;
   }
   /* header/profile section */
   /* resize fixed img size icon  and move contents to right side*/
@@ -32,18 +33,18 @@
     overflow-wrap: normal;
     margin-right: 1em;
   }
-  div > img {
-    max-width:30%;
-    height:auto;
+  .profile-pic img {
+    max-width: 30%;
+    height: auto;
     margin-bottom: 0.3em;
   }
 
-
   /* reconfigures layout of tweet container */
-  .tweet{
+  .tweet {
     flex-direction: row;
   }
-  .tweet-header, .tweet-footer{
+  .tweet-header,
+  .tweet-footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -56,22 +57,28 @@
     border-color: transparent;
   }
   /* resizes icon proportionally */
-  img.left-items {
-    max-width:40px;
+  .left-items img {
+    max-width: 40px;
     min-width: 40px;
-    height:auto;
+    height: auto;
+    margin-right: 0.2em;
   }
-
+  /* targets user's name beside icon */
+  .left-items span{
+    font-size: 0.5em;
+  }
+ /* targets usertag */
   span.right-items {
     padding-bottom: auto;
     margin-left: 1em;
   }
+  /* targets time based text in lower left of tweet */
   span.left-items {
     font-size: 0.8em;
     margin-right: 1em;
   }
 
-  .smaller-font{
+  .smaller-font {
     font-size: 0.8em;
   }
 }
@@ -80,34 +87,40 @@
 /* @media only screen and (min-width : 629px) and (max-width: 1442px){} */
 
 /* only tested up to 4k px width; breakpoint causes overflow to tweet body*/
-@media only screen and (min-width : 1442px){
-  
+@media only screen and (min-width: 1442px) {
   /* change nav on resize */
-  nav{
+  nav {
     background-color: #4056a1;
   }
-  #header-right, nav > span {
+  #header-right,
+  nav > span {
     background: transparent;
   }
 
   /* this is contaniner of profile pic and tweets container */
-  .main-page-body{
+  .main-page-body {
     flex-direction: row;
   }
 
   /* profile pic size adjustment */
-  .profile{
+  .profile {
     max-width: 20vw;
   }
 
   /* new tweet input section adjustment since nav bar is on top in new display*/
-  .new-tweet{
+  .new-tweet {
     margin-top: 5.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
+  #past-tweets{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 
   /* full 140 character tweets can display at full size at this point */
-  .smaller-font{
+  .smaller-font {
     font-size: 1em;
   }
 }

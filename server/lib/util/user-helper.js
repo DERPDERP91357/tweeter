@@ -44,8 +44,7 @@ module.exports = {
     };
 
     const avatarArray = avatars[gender];
-    const userAvatar =
-      avatarArray[Math.floor(Math.random() * avatarArray.length)];
+    const userAvatar = avatarArray[Math.floor(Math.random() * avatarArray.length)];
 
     return {
       name: userName,

@@ -33,8 +33,8 @@ body {
 }
 
 /* combines profile pic and tweet container one item for dispay purposes */
-.main-page-body{
-  display:flex;
+.main-page-body {
+  display: flex;
   flex-direction: column;
 }
 
@@ -43,4 +43,3 @@ main {
   width: 90%;
   align-self: center;
 }
-

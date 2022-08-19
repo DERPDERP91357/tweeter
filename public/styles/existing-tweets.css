@@ -10,7 +10,7 @@
 }
 
 /* creates box shadow on hover */
-.tweet:hover { 
+.tweet:hover {
   box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(129, 5, 88, 0.705);
 }
 
@@ -19,7 +19,7 @@
   width: 100%;
   justify-content: space-between;
   align-content: center;
-  color:aliceblue;
+  color: aliceblue;
   font-family: "Bungee", sans-serif;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  color:aliceblue;
+  color: aliceblue;
   font-family: "Bungee", sans-serif;
 }
 
@@ -37,6 +37,8 @@
 }
 .left-items {
   margin-left: 1.5em;
+  display: flex;
+  align-items: center;
 }
 
 /* shift just the usertag up */
@@ -44,8 +46,9 @@ span.right-items {
   padding-bottom: 2em;
 }
 /* targets img in tweet header */
-.tweet-header img {
+.left-items img {
   margin-bottom: 1em;
+  margin-right: 1em;
   /* make profile image an icon */
   border-radius: 50%;
   background-color: aliceblue;
@@ -58,7 +61,7 @@ span.right-items {
   width: 95%;
   margin-bottom: 0.5em;
   border-bottom: 0.25em solid black;
-  color:aliceblue;
+  color: aliceblue;
   font-family: "Bungee", sans-serif;
 }
 
@@ -78,4 +81,3 @@ span.right-items {
   overflow-wrap: anywhere;
   margin-top: 0em;
 }
-
