@@ -10,8 +10,11 @@ This repository is the starter code for the project: Students will fork and clon
 !["Main Url Page"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/normal.png?raw=true)
 - Users can post new "Chirps" of up to 140 characters and view a history of past "Chirps"
 
+
+
 !["Main Page (Large Screen Version"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/largest.png?raw=trueraw=true)
 - API works even on large screens...
+
 
 
 !["Main Page (Small Screen Version"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/small.png?raw=true)
