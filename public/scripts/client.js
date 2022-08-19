@@ -60,11 +60,9 @@ $(document).ready(function () {
     }
     const data = $(this).serialize();
     $.post("/tweets", data).then(() => {
-      $(".error")
-        .css({ "background-color": "rgba(162, 0, 255, 0.322)" })
-        .text("Alright!! The world is now one Chirp louder!!")
-        .prepend('<i class="fa-solid fa-circle-check"></i>')
-        .slideDown("slow");
+      $(".error").css({ "background-color": "rgba(162, 0, 255, 0.322)" }).text("Alright!! The world is now one Chirp louder!!").prepend('<i class="fa-solid fa-circle-check"></i>').slideDown("slow");
+      $("#tweet-text").val("");
+      $("#tweet-text").siblings("div").children(".counter").val(140);
       loadtweets();
     });
   });
