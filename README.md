@@ -7,22 +7,15 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## App Features
 
-!["Main Url Page"](https://github.com/DERPDERP91357/tinyapp/blob/main/docs/tiny%20app%20main%20page.jpg?raw=true)
-- Users can delete and edit links tied to their account using the associated buttons!
+!["Main Url Page"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/normal.png?raw=true)
+- Users can post new "Chirps" of up to 140 characters and view a history of past "Chirps"
 
-!["Individual Pages for Each Shortened Link"](https://github.com/DERPDERP91357/tinyapp/blob/main/docs/tinyapp%20individual.jpg?raw=true)
-- Shortened link pages feature link that may be shared with others!
-- New links may be created by created the "Create New URL"
-- Site tracks link usage:
-  - total number of visits
-  - unique visitors
-  - logs type, partial id and time of every visit
+!["Main Page (Large Screen Version"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/largest.png?raw=trueraw=true)
+- API works even on large screens...
 
 
-!["Registration Page"](https://github.com/DERPDERP91357/tinyapp/blob/main/docs/tiny%20app%20register.jpg?raw=true)
-
-!["Login Page"](https://github.com/DERPDERP91357/tinyapp/blob/main/docs/tinyapp%20login.jpg?raw=true)
-- Login and Registration is simple and secure! 
+!["Main Page (Small Screen Version"](https://github.com/DERPDERP91357/tweeter/blob/main/docs/small.png?raw=true)
+- ... or even small ones!!
 
 
 ## Getting Started
